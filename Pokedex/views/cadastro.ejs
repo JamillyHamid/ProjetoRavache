@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre Um Pokemon</title>
+</head>
+<body>
+    <h1>Cadastrar Novo Pokémon</h1>
+    <form action="/pokemons" method="POST">
+        <label>Nome:</label>
+        <input type="text" name="nome" required>
+        <label>Tipo:</label>
+        <input type="text" name="tipo" required>
+        <label>Peso:</label>
+        <input type="text" name="peso" required>
+        <label>Altura:</label>
+        <input type="text" name="altura" required>
+        <button type="submit">Cadastrar Pokémon</button>
+    </form>
+    <a href="/pokemons">Voltar à lista de Pokémons</a>
+</body>
+</html>
+
+<style>
+    /* Estilos para o formulário de cadastro de Pokémon */
+    .pokemon-form-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .pokemon-form-container h2 {
+        color: #e3350d;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .pokemon-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .pokemon-form label {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .pokemon-form input[type="text"] {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: #f4f4f9;
+    }
+
+    .pokemon-form button {
+        padding: 10px;
+        border: none;
+        background-color: #3b4cca;
+        color: #fff;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .pokemon-form button:hover {
+        background-color: #e3350d;
+    }
+
+</style>

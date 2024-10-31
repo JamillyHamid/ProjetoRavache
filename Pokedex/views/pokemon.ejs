@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pokemon.nome %></title>
+</head>
+<body>
+    <div class="pokemon-detail-container">
+        <h1><%= pokemon.nome %></h1>
+        <p>Tipo: <%= pokemon.tipo %></p>
+        <p>Peso: <%= pokemon.peso %> kg</p>
+        <p>Altura: <%= pokemon.altura %> m</p>
+        <a href="/pokemons">Voltar à Pokédex</a>
+    </div>
+</body>
+</html>
+
+<style>
+    /* Estilos para a página de detalhes do Pokémon */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .pokemon-detail-container {
+        max-width: 600px;
+        margin: 20px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .pokemon-detail-container h1 {
+        color: #e3350d;
+    }
+
+    .pokemon-detail-container p {
+        font-size: 1.1em;
+        color: #333;
+        margin-top: 10px;
+    }
+
+    .pokemon-detail-container a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #3b4cca;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .pokemon-detail-container a:hover {
+        background-color: #e3350d;
+    }
+</style>

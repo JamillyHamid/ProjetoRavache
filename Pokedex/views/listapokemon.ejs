@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pokémons</title>
+</head>
+<body>
+    <h1>Lista de Pokémons</h1>
+    <ul>
+        <% pokemons.forEach(pokemon => { %>
+            <li>
+                <strong><%= pokemon.nome %></strong> - Tipo: <%= pokemon.tipo %>
+            </li>
+        <% }) %>
+    </ul>
+    <a href="/pokemons/new">Cadastrar Novo Pokémon</a>
+</body>
+</html>
+
+<style>
+    /* Estilos para a lista de Pokémons */
+    .pokemon-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .pokemon-container h1 {
+        color: #e3350d;
+        text-align: center;
+    }
+
+    .pokemon-list {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .pokemon-item {
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .pokemon-item strong {
+        color: #333;
+    }
+
+    .pokemon-link {
+        color: #3b4cca;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .pokemon-link:hover {
+        color: #e3350d;
+    }
+
+</style>
